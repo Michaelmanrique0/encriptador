@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family:Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display:swap');
+
+:root{
+    --family-font: "Inter", sans-serif;
+
+    --color-blanco: #ffffff;
+    --color-azul: #0A3871;
+    --color-gris: #495057;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--family-font);
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+.logo-alura{
+    margin: 24px 0px 24px 16px;
+}
+
+main{
+    margin: 56px 16px 0px 16px;
+}
+
+.textarea-text{
+    border-style: none;
+    outline: none;
+    color: var(--color-azul);
+    font-size: 2rem;
+    background-color: #F3F5FC;
+    width: 100%;
+}
+
+.textarea-text::placeholder{
+    color: var(--color-azul);
+    font-size: 2rem;
+}
+
+.informacion{
+    display: flex;
+    gap: 8px;
+    height: 16px;
+    align-items: center;
+}
+
+.texto-informativo{
+    font-size: 0.75rem;
+    font-family: var(--family-font);
+    color: #495057;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 24px;
+}
+
+.activo{
+    border: none;
+    background-color: var(--color-azul);
+    padding: 24px;
+    font-size: 1rem;
+    border-radius: 24px;
+    color: var(--color-blanco);
+}
+
+.inactivo{
+    border:1px solid var(--color-azul);
+    padding: 24px;
+    font-size: 1rem;
+    border-radius: 24px;
+    color: var(--color-azul);
+}
+
+.transformado {
+    margin: 64px 8px;
+    background-color: var(--color-blanco);
+    padding: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 34px -35px;
+}
+
+.titulo-mensaje{
+    color: var(--color-gris);
+    text-align: center;
+}
+
+.texto-mensaje{
+    margin-top: 16px;
+    text-align: center;
+    color: var(--color-gris);
+}
+
+.text-transform{
+    font-size: 1.5rem;
+    color: var(--color-gris);
+    overflow-wrap: break-word;
+}
+
+.style-button{
+  padding: 24px;
+  width: 100%;
+  border-radius: 24px;
+  margin-top: 32px;
+  font-size: 1rem;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+}
+
+.copi-button{
+    width: 100%;
+    padding: 24px;
+    border: 1px solid var(--color-azul);
+    background-color: var(--color-blanco);
+    border-radius: 24px;
+    margin-top: 32px;
+}
+
+.img-muñeco{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .botones{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .activo{
+        width: 332px;
+    }
+
+    .inactivo{
+        width: 332px;
+    }
+    .img-muñeco{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1440px){
+ main{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .img-muñeco{
+    display: block;
+    margin: auto;
+}
+
+.logo-alura{
+    margin: 40px 0px 24px 84px;
+}
+
+.transformado{
+    width: 500px;
+    height: 909px;
+    margin-top: -148px;
+    margin-bottom: 0px;
+    display: grid;
+    align-content: center;
+}
+
+.textarea-text{
+    height: 85%;
+}
+
+}
+  
